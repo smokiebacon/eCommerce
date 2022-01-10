@@ -1,0 +1,33 @@
+{
+  "name": "mernstore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smokiebacon/eCommerce.git"
+  },
+  "author": "Abraham Hsu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smokiebacon/eCommerce/issues"
+  },
+  "homepage": "https://github.com/smokiebacon/eCommerce#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.6"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
